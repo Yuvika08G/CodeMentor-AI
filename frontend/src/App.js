@@ -10,49 +10,44 @@ function App() {
   const [isDark, setIsDark] = useState(true);
 
   // ANALYZE CODE
-   const analyzeCode = async () => {
-    try {
-      const response = await axios.post(
-        `${API_URL}/analyze`,
-        { code }
-      );
+ const analyzeCode = async () => {
+  try {
+    const response = await axios.post(
+      `${API_URL}/analyze`,
+      { code }
+    );
 
-      setResult(response.data);
-    } catch (error) {
-      console.log(error);
+    setResult(response.data);
 
-      setResult({
-        bug: "Backend connection failed",
-        hint: "Check if backend server is running",
-        suggestion: "Run node server.js",
-        complexity: "-"
-      });
-    }
-  };
+  } catch (error) {
+    console.error(error);
+  }
+};
 
   // RUN CODE
-  const runCode = async () => {
-    try {
-      const response = await fetch(
-        `${API_URL}/analyze`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({ code })
-        }
-      );
+  const API_URL = process.env.REACT_APP_API_URL;
 
-      const data = await response.json();
+const runCode = async () => {
+  try {
+    const response = await fetch(
+      `${API_URL}/run`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ code })
+      }
+    );
 
-      setOutput(data.output);
-    } catch (error) {
-      console.log(error);
+    const data = await response.json();
+    setOutput(data.output);
 
-      setOutput("Execution failed");
-    }
-  };
+  } catch (error) {
+    console.error(error);
+    setOutput("Execution failed");
+  }
+};
 
   return (
     <div
