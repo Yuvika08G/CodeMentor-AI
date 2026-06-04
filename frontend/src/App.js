@@ -151,11 +151,11 @@ const runCode = async () => {
   );
 }
 
-function Card({ title, content }) {
+function Card({ title, content, isDark }) {
   return (
-    <div className="bg-white border border-gray-200 p-5 rounded-xl mb-4 shadow-md">
-      <h3 className="text-xl font-bold mb-3 text-gray-900">{title}</h3>
-      <p className="text-gray-700 leading-relaxed">{content}</p>
+    <div className={`${isDark ? "bg-[#0b1220] border-gray-700" : "bg-white border-gray-200"} border p-5 rounded-xl mb-4 shadow-md`}>
+      <h3 className={`text-xl font-bold mb-3 ${isDark ? "text-white" : "text-gray-900"}`}>{title}</h3>
+      <p className={`leading-relaxed ${isDark ? "text-gray-300" : "text-gray-700"}`}>{content}</p>
     </div>
   );
 }
