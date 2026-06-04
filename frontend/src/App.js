@@ -10,10 +10,10 @@ function App() {
   const [isDark, setIsDark] = useState(true);
 
   // ANALYZE CODE
-  const analyzeCode = async () => {
+   const analyzeCode = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/analyze",
+        `${API_URL}/analyze`,
         { code }
       );
 
@@ -34,7 +34,7 @@ function App() {
   const runCode = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/run",
+        `${API_URL}/analyze`,
         {
           method: "POST",
           headers: {
