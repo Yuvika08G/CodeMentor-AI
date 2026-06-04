@@ -135,10 +135,10 @@ const runCode = async () => {
 
           {result ? (
             <>
-              <Card title="🐞 Bug" content={result.bug} />
-              <Card title="💡 Hint" content={result.hint} />
-              <Card title="⚡ Suggestion" content={result.suggestion} />
-              <Card title="📊 Complexity" content={result.complexity} />
+              <Card title="🐞 Bug" content={result.bug} isDark={isDark} />
+<Card title="💡 Hint" content={result.hint} isDark={isDark} />
+<Card title="⚡ Suggestion" content={result.suggestion} isDark={isDark} />
+<Card title="📊 Complexity" content={result.complexity} isDark={isDark} />
             </>
           ) : (
             <div className="p-6 rounded-xl border border-gray-700">
