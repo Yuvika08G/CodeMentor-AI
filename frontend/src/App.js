@@ -78,21 +78,21 @@ const runCode = async () => {
         <div className="flex gap-3">
           <button
             onClick={() => setIsDark(!isDark)}
-            className="px-4 py-2 rounded-xl bg-gray-700 text-white"
+            className={`px-5 py-2 rounded-xl ${isDark ? "bg-white/10 hover:bg-white/20 text-white" : "bg-gray-200 hover:bg-gray-300 text-gray-900"} transition-all duration-300`}
           >
-            {isDark ? "☀️" : "🌙"}
+            {isDark ? "☀️ Light" : "🌙 Dark"}
           </button>
 
           <button
             onClick={runCode}
-            className="px-5 py-2 rounded-xl bg-green-500 text-white"
+            className="px-5 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-green-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-green-500/30 text-white"
           >
             Run Code
           </button>
 
           <button
             onClick={analyzeCode}
-            className="px-5 py-2 rounded-xl bg-purple-500 text-white"
+            className="px-5 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/30 text-white"
           >
             Analyze Code
           </button>
