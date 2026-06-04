@@ -31,7 +31,6 @@ app.post("/run", async (req, res) => {
     }
 });
 
-// ---------------- ANALYZE CODE ----------------
 
 app.post("/analyze", async (req, res) => {
     try {
@@ -78,10 +77,8 @@ ${code}`
     }
 });
 
-// ---------------- SERVER ----------------
-
 app.get("/", (req, res) => {
-    res.send("CodeMentor AI Backend Running 🚀");
+    res.send("CodeMentor AI Backend Running ");
 });
 
 const PORT = process.env.PORT || 5000;
