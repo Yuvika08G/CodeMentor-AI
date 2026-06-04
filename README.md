@@ -1,4 +1,4 @@
-# 🚀 CodeMentor AI
+#  CodeMentor AI
 
 An AI-Powered Coding Practice Assistant that helps students write, execute, debug, and improve code in real-time.
 
@@ -6,7 +6,7 @@ CodeMentor AI combines a professional code editor, cloud-based code execution, a
 
 ---
 
-# 📌 Project Overview
+#  Project Overview
 
 Learning programming can be difficult for beginners because compiler errors often do not explain the root cause of problems. Students spend significant time searching for solutions, understanding errors, and optimizing code.
 
@@ -24,7 +24,7 @@ The platform acts as a virtual coding mentor that helps students learn faster an
 
 ---
 
-# 🎯 Problem Statement
+#  Problem Statement
 
 Students frequently struggle with:
 
@@ -42,9 +42,9 @@ CodeMentor AI not only runs code but also explains mistakes, suggests improvemen
 
 ---
 
-# ✨ Features
+#  Features
 
-## 📝 Smart Code Editor
+##  Smart Code Editor
 
 * Monaco Editor (VS Code Editor)
 * Syntax Highlighting
@@ -55,7 +55,7 @@ CodeMentor AI not only runs code but also explains mistakes, suggests improvemen
 
 ---
 
-## ▶️ Online Code Execution
+##  Online Code Execution
 
 Users can execute code directly from the browser.
 
@@ -80,7 +80,7 @@ Supported Languages:
 
 ---
 
-## 🤖 AI Code Analysis
+##  AI Code Analysis
 
 Powered by:
 
@@ -88,7 +88,7 @@ Powered by:
 
 The AI reviews code and provides:
 
-### 🐞 Bug Detection
+###  Bug Detection
 
 Detects:
 
@@ -99,13 +99,13 @@ Detects:
 
 ---
 
-### 💡 Learning Hints
+###  Learning Hints
 
 Provides hints that guide students toward the solution rather than directly giving answers.
 
 ---
 
-### ⚡ Optimization Suggestions
+###  Optimization Suggestions
 
 Suggests:
 
@@ -116,7 +116,7 @@ Suggests:
 
 ---
 
-### 📊 Complexity Analysis
+###  Complexity Analysis
 
 Estimates:
 
@@ -132,7 +132,7 @@ Examples:
 
 ---
 
-## 🎨 Modern User Interface
+##  Modern User Interface
 
 Features:
 
@@ -144,7 +144,7 @@ Features:
 
 ---
 
-# 🏗 System Architecture
+#  System Architecture
 
 User
 ↓
@@ -170,7 +170,7 @@ Frontend UI Update
 
 ---
 
-# ⚙️ Tech Stack
+#  Tech Stack
 
 ## Frontend
 
@@ -257,7 +257,7 @@ Used for:
 
 ---
 
-# 🔄 Request Flow
+#  Request Flow
 
 ## Analyze Code
 
@@ -428,7 +428,7 @@ Response:
 
 ---
 
-# 💻 Local Setup
+#  Local Setup
 
 ## Clone Repository
 
@@ -505,7 +505,7 @@ http://localhost:3000
 
 ---
 
-# ☁️ Deployment
+#  Deployment
 
 ## Backend Deployment (Render)
 
@@ -553,7 +553,7 @@ REACT_APP_API_URL=https://your-render-backend-url
 
 ---
 
-# 🔐 Security Features
+#  Security Features
 
 * API Keys stored in environment variables
 * CORS enabled
@@ -563,7 +563,7 @@ REACT_APP_API_URL=https://your-render-backend-url
 
 ---
 
-# 🚀 Future Enhancements
+#  Future Enhancements
 
 * User Authentication
 * Coding History
@@ -575,7 +575,7 @@ REACT_APP_API_URL=https://your-render-backend-url
 
 ---
 
-# 🎓 Educational Impact
+#  Educational Impact
 
 CodeMentor AI helps students:
 
