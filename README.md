@@ -571,10 +571,7 @@ REACT_APP_API_URL=https://your-render-backend-url
 * AI Chat Assistant
 * Multi-Language Support
 * Custom Test Cases
-* DSA Question Generator
-* Interview Preparation Mode
 * Performance Analytics Dashboard
-* Leaderboard System
 
 ---
 
