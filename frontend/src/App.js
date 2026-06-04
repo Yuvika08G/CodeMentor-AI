@@ -9,7 +9,6 @@ function App() {
   const [output, setOutput] = useState("");
   const [isDark, setIsDark] = useState(true);
 
-  // ANALYZE CODE
  const analyzeCode = async () => {
   try {
     const response = await axios.post(
@@ -24,7 +23,7 @@ function App() {
   }
 };
 
-  // RUN CODE
+  
   const API_URL = process.env.REACT_APP_API_URL;
 
 const runCode = async () => {
@@ -57,7 +56,7 @@ const runCode = async () => {
           : "bg-gradient-to-br from-[#f0f4ff] via-[#ffffff] to-[#e8f0fe] text-gray-900"
       } overflow-hidden`}
     >
-      {/* HEADER */}
+     
       <div
         className={`h-16 ${
           isDark ? "bg-white/5" : "bg-white/60"
@@ -99,9 +98,9 @@ const runCode = async () => {
         </div>
       </div>
 
-      {/* MAIN */}
+      
       <div className="flex h-[calc(100%-64px)]">
-        {/* LEFT */}
+        
         <div className="w-[65%] flex flex-col border-r border-gray-700">
           <Editor
             height="100%"
@@ -115,7 +114,7 @@ const runCode = async () => {
             }}
           />
 
-          {/* TERMINAL */}
+          
           <div className="h-40 bg-black text-green-400 p-4 overflow-auto">
             <h3 className="text-white font-bold mb-2">
               Terminal
@@ -127,7 +126,7 @@ const runCode = async () => {
           </div>
         </div>
 
-        {/* RIGHT */}
+      
         <div className="w-[35%] p-5 overflow-y-auto">
           <h2 className="text-4xl font-bold mb-8">
             AI Assistant
