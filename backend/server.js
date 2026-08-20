@@ -40,7 +40,7 @@ app.post("/analyze", async (req, res) => {
         const response = await axios.post(
             "https://api.groq.com/openai/v1/chat/completions",
             {
-                model: "llama-3.1-8b-instant",
+                model: "openai/gpt-oss-20b",
                 messages: [{
                     role: "user",
                     content: `Analyze this code like a coding mentor.
